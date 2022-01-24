@@ -98,11 +98,6 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    /* gap: 1rem; */
-}
-
-.principalHome__main > *{
-    background-color: aqua;    
 }
 
 .principalHome__main h1, .principalHome__main__apellido {
