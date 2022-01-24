@@ -32,10 +32,19 @@ li {
     display: inline-block;
 }
 
+.gridsHome {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
 /* ENCABEZADO */
 
 .encabezado{
-    position: fixed; 
+    grid-area: header;
+    /* position: fixed;  */
     background-color: var(--grisAB);
     width: 100%; 
     display:flex;
@@ -81,7 +90,8 @@ li {
 /* PRINCIPAL HOME */
 
 .principalHome{
-    padding-top: var(--navegador--height);
+    grid-area: main;
+    /* padding-top: var(--navegador--height); */
 }
 
 .principalHome__main{
@@ -153,6 +163,7 @@ li {
 /* FOOTER */
 
 .footer {
+    grid-area: footer;
     background-color: var(--grisAB);
     width: 100%;
 }
@@ -174,6 +185,7 @@ li {
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 5rem;
+    text-align: center;
 }
 
 .quickContact__form{
@@ -188,7 +200,6 @@ li {
 .quickContact__form div {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     gap: var(--navegador_padding);
     width: 100%;
 }
@@ -210,6 +221,7 @@ li {
 }
 
 .quickContact__form div textarea{
+    
     height: 9rem !important;
 }
 
@@ -237,10 +249,6 @@ li {
     padding : var(--navegador_padding);
     align-items: center;
 }
-
-/* .footer__copy>*{
-    border: solid 1px red;
-} */
 
 .footer__copy p{
     font-family: 'Rubik', sans-serif;
@@ -283,10 +291,6 @@ font-weight: 400;
     display: flex;
     flex-wrap: wrap;
 }
-
-/* .homeContent > *{
-    border: solid 1px red;
-} */
 
 .homeContent__section{
     width: 50%;
@@ -356,7 +360,7 @@ font-weight: 400;
     text-transform: uppercase;
 }
 
- .homeContent div:nth-child(1){
+.homeContent div:nth-child(1){
     background-color: #19C6FF;
     background-image: url("img/test_design.jpg");
     background-size: cover;
@@ -381,6 +385,85 @@ font-weight: 400;
     background-position: center;
 }
 
+/* WHO AM I CONTENT */
+
+.heroWhoAmI {
+    width: 100%;
+    padding: 10vw;
+    height: calc((var(--main--height))/2);
+    background-color: yellow;
+    background-image: url("img/background_princial_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center right;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.heroWhoAmI > h1 {
+    background-color: rgb(0, 0, 0);
+    color: var(--menuLinksAB);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 8rem;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: right;    
+}
+
+.whoAmIContent {
+    background-color: #d9d931;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.whoAmIContent__txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10vw;
+    padding: 10%;
+    
+}
+
+.whoAmIContent__txt > h2 {
+    background-color: black;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: var(--menuLinksAB);    
+    font-size: 2.8rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.whoAmIContent__txt > p {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    font-weight: 400;
+    color: var(--menuLinksAB);    
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.whoAmIContent__txt p:last-child {
+    margin-bottom: 0rem;
+}
+
+.whoAmIContent__img {
+
+    background-image: url("../img/test_who_am_i.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 /* DESKTOP FIRST Porque un portfolio se ve gralmente en desktops */
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
@@ -389,5 +472,20 @@ font-weight: 400;
     }
     .homeContent__section{
         width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    .whoAmIContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+    .quickContact__form div .quickContact--campo{
+        width: 80%;
+    }
+    
+    .quickContact__form div label{
+        width: 20%;
     }
   }
