@@ -97,7 +97,7 @@ li {
 .principalHome__main{
     width: 100%;
     position: relative;
-    padding: 10vw;
+    padding: 0px 10vw 0px 10vw;
     height: var(--main--height);
     background-color: yellow;
     background-image: url("img/background_princial_1.jpg");
@@ -389,7 +389,7 @@ font-weight: 400;
 
 .heroWhoAmI {
     width: 100%;
-    padding: 10vw;
+    padding: 0px 10vw 0px 10vw;
     height: calc((var(--main--height))/2);
     background-color: yellow;
     background-image: url("img/background_princial_1.jpg");
@@ -458,7 +458,7 @@ font-weight: 400;
 
 .whoAmIContent__img {
 
-    background-image: url("../img/test_who_am_i.jpg");
+    background-image: url("./img/test_who_am_i.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
