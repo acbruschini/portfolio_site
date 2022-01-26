@@ -115,6 +115,7 @@ li {
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
     text-align: right;    
+    animation: comeFromLeft 0.5s ease-in-out;
 }
 
 .principal__main__apellido {
@@ -135,6 +136,7 @@ li {
     line-height: 2rem;
     text-align: right;
     word-spacing: auto;
+    animation: comeFromLeft 0.5s ease-in-out;
 }
 
 .principalHome__main ul {
@@ -487,3 +489,29 @@ font-weight: 400;
         width: 20%;
     }
   }
+
+  @keyframes comeFromRight {
+    0%{
+      transform: translate(100%);
+      opacity: 0;
+    }
+    70%{
+      transform: translate(-10%);
+    }
+    100%{
+      transform: translate(0%);
+    }
+}
+
+@keyframes comeFromLeft {
+    0%{
+      transform: translate(-100%);
+      opacity: 0;
+    }
+    70%{
+      transform: translate(10%);
+    }
+    100%{
+      transform: translate(0%);
+    }
+}
