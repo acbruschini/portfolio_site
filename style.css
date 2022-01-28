@@ -22,6 +22,10 @@ body{
     --quickContact--height: calc((var(--navegador_padding)*2 + var(--navegador_logo--height))*4);
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+
 ul {
     list-style:none;
 }
@@ -98,14 +102,14 @@ li {
     align-items: flex-end;
 }
 
-.principalHome__main h1, .principalHome__main__apellido {
+.principalHome__main h1{
     background-color: rgb(0, 0, 0);
     color: var(--menuLinksAB);
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
     text-align: right;    
-    animation: comeFromLeft 0.5s ease-in-out;
 }
 
 .principal__main__apellido {
@@ -303,7 +307,7 @@ font-weight: 400;
     flex-direction: column;
     width: 100%;
     height: calc(var(--navegador--height)*3);
-    padding: 5%;
+    padding: 10%;
     background-color: yellow;
     font-family: 'Josefin Sans', sans-serif;
     align-items: flex-start;
@@ -407,6 +411,7 @@ font-weight: 400;
     background-color: rgb(0, 0, 0);
     color: var(--menuLinksAB);
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
     text-align: right;    
