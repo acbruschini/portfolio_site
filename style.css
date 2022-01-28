@@ -23,6 +23,10 @@ body{
     --quickContact--height: calc((var(--navegador_padding)*2 + var(--navegador_logo--height))*4);
 }
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+}
+
 ul {
     list-style:none!important;
 }
@@ -99,15 +103,29 @@ li {
     align-items: flex-end;
 }
 
+<<<<<<< HEAD
 .principalHome__main__h1, .principalHome__main__apellido {
+=======
+.principalHome__main h1{
+>>>>>>> 4a83cb8c4682371efda68cdea9e128be05c9cf05
     background-color: rgb(0, 0, 0);
     color: var(--menuLinksAB);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
+<<<<<<< HEAD
     text-align: right;
     margin: 0!important;
+=======
+    text-align: right;    
+}
+
+.principal__main__apellido {
+    color: var(--menuLinksHoverAB);
+    padding: 0px;
+    
+>>>>>>> 4a83cb8c4682371efda68cdea9e128be05c9cf05
 }
 
 .principalHome__main__p {
@@ -298,7 +316,7 @@ font-weight: 400;
     flex-direction: column;
     width: 100%;
     height: calc(var(--navegador--height)*3);
-    padding: 5%;
+    padding: 10%;
     background-color: yellow;
     font-family: 'Josefin Sans', sans-serif;
     align-items: flex-start;
@@ -402,6 +420,7 @@ font-weight: 400;
     background-color: rgb(0, 0, 0);
     color: var(--menuLinksAB);
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
     text-align: right;    
