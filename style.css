@@ -1,6 +1,3 @@
-.encabezado {
-    
-}
 * {
     margin: 0;
     padding: 0;
@@ -33,18 +30,9 @@ li {
     display: inline-block;
 }
 
-.gridsHome {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-
 /* ENCABEZADO */
 
 .encabezado{
-    grid-area: header;
     /* position: fixed;  */
     background-color: var(--grisAB);
     width: 100%; 
@@ -91,7 +79,6 @@ li {
 /* PRINCIPAL HOME */
 
 .principalHome{
-    grid-area: main;
     /* padding-top: var(--navegador--height); */
 }
 
@@ -166,7 +153,6 @@ li {
 /* FOOTER */
 
 .footer {
-    grid-area: footer;
     background-color: var(--grisAB);
     width: 100%;
 }
@@ -192,7 +178,6 @@ li {
 }
 
 .quickContact__form{
-    /* background-color: violet; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -476,9 +461,9 @@ font-weight: 400;
     .homeContent__section{
         width: 100%;
     }
-  }
+ }
 
-  @media only screen and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     .whoAmIContent {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
@@ -491,30 +476,4 @@ font-weight: 400;
     .quickContact__form div label{
         width: 20%;
     }
-  }
-
-  @keyframes comeFromRight {
-    0%{
-      transform: translate(100%);
-      opacity: 0;
-    }
-    70%{
-      transform: translate(-10%);
-    }
-    100%{
-      transform: translate(0%);
-    }
-}
-
-@keyframes comeFromLeft {
-    0%{
-      transform: translate(-100%);
-      opacity: 0;
-    }
-    70%{
-      transform: translate(10%);
-    }
-    100%{
-      transform: translate(0%);
-    }
-}
+ }
