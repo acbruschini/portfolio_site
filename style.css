@@ -23,8 +23,10 @@ body{
     --quickContact--height: calc((var(--navegador_padding)*2 + var(--navegador_logo--height))*4);
 }
 
+/* RESETEO PARA EL BOOSTRAP */
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -103,21 +105,13 @@ li {
     align-items: flex-end;
 }
 
-<<<<<<< HEAD
-.principalHome__main__h1, .principalHome__main__apellido {
-=======
 .principalHome__main h1{
->>>>>>> 4a83cb8c4682371efda68cdea9e128be05c9cf05
     background-color: rgb(0, 0, 0);
     color: var(--menuLinksAB);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
-<<<<<<< HEAD
-    text-align: right;
-    margin: 0!important;
-=======
     text-align: right;    
 }
 
@@ -125,10 +119,9 @@ li {
     color: var(--menuLinksHoverAB);
     padding: 0px;
     
->>>>>>> 4a83cb8c4682371efda68cdea9e128be05c9cf05
 }
 
-.principalHome__main__p {
+.principalHome__main p {
     background-color: rgb(0, 0, 0);
     color: var(--menuLinksAB);
     font-family: 'Josefin Sans', sans-serif;
@@ -139,10 +132,9 @@ li {
     line-height: 2rem;
     text-align: right;
     word-spacing: auto;
-    margin: 0!important;
 }
 
-.principalHome__main__ul {
+.principalHome__main ul {
     margin: 1rem 0 0 0;
     padding: 1rem;
     background-color: var(--grisAB);
@@ -481,7 +473,7 @@ font-weight: 400;
 
 /* DESKTOP FIRST Porque un portfolio se ve gralmente en desktops */
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+    /* tABLET? */
     * {
       font-size: 7px;
     }
@@ -491,6 +483,19 @@ font-weight: 400;
 }
 
 @media only screen and (max-width: 425px) {
+    
+    .homeContent{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "design"
+        "3dModeling"
+        "coding"
+        "photography"
+        "moreWork"
+        ;
+    }
+    
     .whoAmIContent {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
