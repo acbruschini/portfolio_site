@@ -276,8 +276,16 @@ font-weight: 400;
 /* HOME CONTENT */
 
 .homeContent{
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "design 3dModeling"
+    "coding photography"
+    "moreWork moreWork"
+    ;
 }
 
 .homeContent__section{
@@ -286,13 +294,14 @@ font-weight: 400;
 }
 
 .homeContent__moreWork{
+    grid-area: moreWork;
     width: 100%
 }
 
 .homeContent__section{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: calc(var(--navegador--height)*3);
     padding: 5%;
     background-color: yellow;
@@ -348,29 +357,33 @@ font-weight: 400;
     text-transform: uppercase;
 }
 
-.homeContent div:nth-child(1){
+.sectionDesign{
     background-color: #19C6FF;
     background-image: url("img/test_design.jpg");
     background-size: cover;
     background-position: center;
+    grid-area: design;
 }
-.homeContent div:nth-child(2){
+.section3d{
     background-color: #A068A9;
     background-image: url("img/test_3d.jpg");
     background-size: cover;
     background-position: center;
+    grid-area: 3dModeling;
 }
-.homeContent div:nth-child(3){
+.sectionCoding{
     background-color: #FFAC36;
     background-image: url("img/test_coding.jpg");
     background-size: cover;
-    background-position: center;    
+    background-position: center;
+    grid-area: coding;    
 }
-.homeContent div:nth-child(4){
+.sectionPhotography{
     background-color: #FF1956;
     background-image: url("img/test_photography.jpg");
     background-size: cover;
     background-position: center;
+    grid-area: photography;
 }
 
 /* WHO AM I CONTENT */
@@ -461,7 +474,7 @@ font-weight: 400;
     .homeContent__section{
         width: 100%;
     }
- }
+}
 
 @media only screen and (max-width: 425px) {
     .whoAmIContent {
@@ -476,4 +489,4 @@ font-weight: 400;
     .quickContact__form div label{
         width: 20%;
     }
- }
+}
