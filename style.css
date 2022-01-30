@@ -175,15 +175,18 @@ li {
 
 /* FOOTER */
 
-.footer {
-    background-color: var(--grisAB);
+.container_fluid{
+    background-color:var(--menuLinksAB);
+}
+
+footer {
     width: 100%;
 }
 
 .quickContact {
     background-color: var(--menuLinksAB);
     height: var(--quickContact--height);
-    padding: var(--navegador_padding) 20vw var(--navegador_padding) 20vw;
+    padding: var(--navegador_padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,6 +257,7 @@ li {
 }
 
 .footer__copy{
+    background-color: var(--grisAB);
     height: var(--navegador--height);
     display: flex;
     justify-content: space-between;
