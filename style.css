@@ -39,48 +39,66 @@ li {
 
 /* ENCABEZADO */
 
-.encabezado{
-    /* position: fixed;  */
-    background-color: var(--grisAB);
-    width: 100%; 
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding : var(--navegador_padding);
-    z-index: 2;
-
+.customMenu {
+    flex-grow: 0;
 }
 
-.encabezado__logo{
-    height: var(--navegador_logo--height);
-    margin-right: var(--navegador_padding);
-}
-
-.encabezado__nav{
-    text-align: right;
-}
-
-.encabezado__nav a, .encabezado__nav span{
+.customNavLink{
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
+    color: var(--menuLinksAB);
+    margin-left: 1rem;
+    
 }
 
-.encabezado__nav span{
+.customNavLink:hover{
+    color: var(--menuLinksHoverAB);
+}
+
+.customSeparador{
     color: rgb(100, 100, 100);
     margin-left: 0.8rem;
     margin-right: 0.8rem;
 }
 
-.encabezado__nav a{
-    color: var(--menuLinksAB);
+.navbar-toggler {
+    border-radius: 0;
+    background-color: var(--menuLinksAB);
+    border: 1px solid var(--menuLinksAB);
 }
 
-.encabezado__nav a:hover{
-    color: var(--menuLinksHoverAB);
+.navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.customDropdownMenu {
+    background-color: var(--grisAB);
+    text-transform: uppercase;
+}
+
+.customDropdownItem{
+    color: var(--menuLinksAB);
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.customDropdownItem:hover{
+    background-color: var(--menuLinksHoverAB);
+}
+
+.customEncabezado{
+    background-color: var(--grisAB);
+    padding : var(--navegador_padding);
+}
+
+.customEncabezado__logo{
+    height: var(--navegador_logo--height);
 }
 
 /* PRINCIPAL HOME */
@@ -281,8 +299,6 @@ font-weight: 400;
 /* HOME CONTENT */
 
 .homeContent{
-    /* display: flex;
-    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
