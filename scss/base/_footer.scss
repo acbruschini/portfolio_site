@@ -1,0 +1,126 @@
+@use './variables' as v;
+
+.quickContact {
+    
+    background-color: v.$colorQCBackground;
+    height: v.$QCHeight;
+    padding: v.$generalPadding v.$leftRightPadding v.$generalPadding v.$leftRightPadding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: v.$generalGap;
+    
+    h2{
+        color: v.$colorMiddle;
+        text-transform: uppercase;
+        font-family: v.$fontSecondary;
+        font-weight: 500;
+        font-size: 5rem;
+        text-align: center;
+    }
+    
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: v.$generalGap;  //VER SI VA POR DOS O COMUN
+        align-items: center;
+        
+        div{
+            display: flex;
+            justify-content: center;
+            gap: v.$generalGap; //VER SI VA POR DOS O COMUN
+            width: 100%;
+            
+            .quickContact--campo{
+                border: solid 1px v.$colorMiddle;
+                background-color: v.$colorLight;
+                width: 100%;
+                height: 3rem;
+            }
+            
+            label{
+                font-family: v.$fontSecondary;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                padding-top: 0.75rem;
+                width: 9rem;
+                text-align: right;
+            }
+            
+            textarea{
+                height: 9rem !important;
+            }
+        }
+    }
+    
+    &--boton input{
+        background-color: v.$colorMiddle;
+        color: v.$colorLight;
+        font-family: v.$fontSecondary;
+        border: 0;
+        padding: 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        width: 10rem;
+        
+        &:hover{
+            background-color: v.$colorLight;
+            color: v.$colorMiddle;
+        }
+    }
+}
+
+.footer {
+    
+    &__copy{
+        background-color: v.$colorDark;
+        height: v.$headerHeight;
+        display: flex;
+        justify-content: space-between;
+        padding : v.$generalPadding;
+        align-items: center;
+
+        p{
+            font-family: v.$fontSecondary;
+            color: v.$colorNavItems;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        
+        span{
+            font-weight: 700;
+        }
+
+        ul{
+            display:flex;
+            gap: 1rem;
+        }
+
+        a{
+            text-decoration: none;
+            font-family: v.$fontSecondary;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: v.$colorNavItems;
+            font-weight: 700;
+        }
+
+        a:hover{
+            color: v.$colorNavItemsHover;
+        }
+
+        span {
+            text-decoration: none;
+            font-family: v.$fontSecondary;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: v.$colorMiddle;
+            font-weight: 700;
+        }
+
+    }
+}

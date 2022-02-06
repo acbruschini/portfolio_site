@@ -1,0 +1,77 @@
+@use './variables' as v;
+
+@mixin titlesAndParagraphsStyles($type){
+    background-color: v.$colorBackgroundH;
+    color: v.$colorH;
+    font-family: v.$fontContent;
+    @if $type == h {
+        font-weight: v.$hFontWeight;
+      } @else if $type == p {
+        font-weight: v.$pFontWeight;
+      }
+}
+
+@mixin heroTitle(){
+    @include titlesAndParagraphsStyles(h);
+    font-size: 8rem;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: right;  
+}
+
+@mixin button($fontsize : 1rem, $color: v.$colorGeneralPrimary){
+    font-family: v.$fontSecondary;
+    background-color: v.$colorDark;
+    font-weight: 400;
+    color: $color;    
+    font-size: $fontsize;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: $fontsize;
+    margin-top: $fontsize;
+    text-align: center;
+
+    &:hover {
+        background-color: $color; 
+        color: v.$colorDark;
+        text-decoration: none;
+        // border: 2px solid v.$colorDark;
+    }
+}
+
+@mixin separador(){
+    height: 2rem;
+    background-color: v.$colorDark;
+}
+
+@mixin homeWhatIveDoneCard($color, $img, $gridArea){
+    display: flex;
+    flex-direction: column;
+    height: v.$homeWhatIveDoneCardHeight;
+    padding: 10%;
+    font-family: v.$fontContent;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: $color;
+    background-image: url($img);
+    background-size: cover;
+    background-position: center;
+    grid-area: $gridArea;
+
+    h3{
+        @include titlesAndParagraphsStyles(h);   
+        font-size: 3rem;
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    p{
+        @include titlesAndParagraphsStyles(p); 
+        width: 70%;  
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        padding: 1rem;
+    }
+    
+    a{
+        @include button(1rem,$color);
+    }
+}

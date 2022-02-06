@@ -1,0 +1,89 @@
+@use '../base/variables' as v;
+@use '../base/mixing' as m;
+
+.homeMain__hero{
+    padding: v.$generalPadding v.$leftRightPadding v.$generalPadding v.$leftRightPadding;
+    height: v.$homeHeroHeight;
+    background-color: v.$colorGeneralPrimary;
+    background-image: url(v.$homeHeroBackground);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center right;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    h1{
+        @include m.heroTitle();
+    }
+
+    p {
+        @include m.titlesAndParagraphsStyles(p);
+        font-size: 1.3rem;
+        padding: 1rem;
+        padding-top: 0;
+        width: 42rem;
+        line-height: 2rem;
+        text-align: right;
+        word-spacing: auto;
+        //animation: comeFromLeft 0.5s ease-in-out;
+    }
+
+    a {
+        @include m.button();
+    }
+}
+
+.separador{
+    @include m.separador();
+}
+
+.homeMain__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "design 3dModeling"
+    "coding photography"
+    "moreWork moreWork"
+    ;
+
+    &__section{
+        height: calc(v.$headerHeight*3);
+    }
+
+    &__moreWork{
+        @include m.button(1.5rem);
+        margin-top: 0;
+        grid-area: moreWork;
+    }
+
+}
+
+.homeMain__content__section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(var(--navegador--height)*3);
+    padding: 10%;
+    background-color: yellow;
+    font-family: 'Josefin Sans', sans-serif;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.section{
+    &Design{
+        @include m.homeWhatIveDoneCard(v.$colorSectionDesign, v.$WhatIveDoneDesignBackground, design);
+    }
+    &3d{
+        @include m.homeWhatIveDoneCard(v.$colorSection3d, v.$WhatIveDone3dBackground, 3d);
+    }
+    &Coding{
+        @include m.homeWhatIveDoneCard(v.$colorSectionCoding, v.$WhatIveDoneCodingBackground, coding);
+    }
+    &Photography{
+        @include m.homeWhatIveDoneCard(v.$colorSectionPhotography, v.$WhatIveDonePhotographyBackground, photography);
+    }
+}

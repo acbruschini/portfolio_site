@@ -1,0 +1,52 @@
+$defaultFontSize: 10px;
+
+// ------------------- COLORES
+
+//GENERALES
+$colorDark: #202020;
+$colorMiddle: #797979;
+$colorLight: #bebebe;
+
+$colorNavItems: #afafaf;
+$colorNavItemsHover: #ffffff;
+
+$colorQCBackground: $colorNavItems;
+$colorQCTitle: $colorMiddle;
+$colorQCFieldBorder: $colorMiddle;
+$colorQCField: $colorLight;
+
+$colorH: $colorLight;
+$colorBackgroundH: black;
+
+$colorGeneralPrimary: yellow;
+
+$colorSectionDesign: #19C6FF;
+$colorSection3d: #A068A9;
+$colorSectionCoding: #FFAC36;
+$colorSectionPhotography: #FF1956;
+
+// ------------------- FONTS
+
+$fontContent: 'Josefin Sans', sans-serif;
+$fontSecondary: 'Rubik', sans-serif;
+$hFontWeight: 700;
+$pFontWeight: 400;
+
+//MEDIDAS
+
+$headerLogoHeight: 6rem;
+$generalPadding: 2rem;
+$leftRightPadding: 10vw;
+$headerHeight: calc(($generalPadding)*2 + $headerLogoHeight);
+$QCHeight: calc($headerHeight*4);
+$generalGap: calc($generalPadding/2);
+
+// HOME
+
+$homeHeroHeight: calc($headerHeight*5);
+$homeWhatIveDoneCardHeight: calc($headerHeight*3);
+$homeHeroBackground: "../img/background_princial_1.jpg";
+$WhatIveDoneDesignBackground: "../img/test_design.jpg";
+$WhatIveDone3dBackground: "../img/test_3d.jpg";
+$WhatIveDoneCodingBackground: "../img/test_coding.jpg";
+$WhatIveDonePhotographyBackground: "../img/test_photography.jpg";

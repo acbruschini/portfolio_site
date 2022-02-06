@@ -1,0 +1,56 @@
+@use './variables' as v;
+
+.customMenu {
+    flex-grow: 0;
+}
+
+.customNavLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: v.$fontSecondary;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: v.$colorNavItems;
+    margin-left: 1rem;
+
+    &:hover{
+        color: v.$colorNavItemsHover;
+    }
+}
+
+.navbar-toggler {
+    border-radius: 0;
+    background-color: v.$colorNavItems;
+    border: 1px solid v.$colorNavItems;
+
+    &-icon {
+        background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+.customDropdownMenu {
+    background-color: v.$colorDark;
+    text-transform: uppercase;
+}
+
+.customDropdownItem{
+    color: v.$colorNavItems;
+    text-transform: uppercase;
+    font-family: v.$fontSecondary;
+    font-weight: 400;
+    font-size: 1rem;
+
+    &:hover{
+        background-color: v.$colorNavItemsHover;
+    }
+}
+
+.customEncabezado{
+    background-color: v.$colorDark;
+    padding : v.$generalPadding;
+
+    &__logo{
+        height: v.$headerLogoHeight;
+    }
+}

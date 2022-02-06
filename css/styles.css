@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box !important;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+.customMenu {
+  flex-grow: 0;
+}
+
+.customNavLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #afafaf;
+  margin-left: 1rem;
+}
+.customNavLink:hover {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border-radius: 0;
+  background-color: #afafaf;
+  border: 1px solid #afafaf;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.customDropdownMenu {
+  background-color: #202020;
+  text-transform: uppercase;
+}
+
+.customDropdownItem {
+  color: #afafaf;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.customDropdownItem:hover {
+  background-color: #ffffff;
+}
+
+.customEncabezado {
+  background-color: #202020;
+  padding: 2rem;
+}
+.customEncabezado__logo {
+  height: 6rem;
+}
+
+.quickContact {
+  background-color: #afafaf;
+  height: 40rem;
+  padding: 2rem 10vw 2rem 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.quickContact h2 {
+  color: #797979;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+  text-align: center;
+}
+.quickContact__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.quickContact__form div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+.quickContact__form div .quickContact--campo {
+  border: solid 1px #797979;
+  background-color: #bebebe;
+  width: 100%;
+  height: 3rem;
+}
+.quickContact__form div label {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-top: 0.75rem;
+  width: 9rem;
+  text-align: right;
+}
+.quickContact__form div textarea {
+  height: 9rem !important;
+}
+.quickContact--boton input {
+  background-color: #797979;
+  color: #bebebe;
+  font-family: "Rubik", sans-serif;
+  border: 0;
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 10rem;
+}
+.quickContact--boton input:hover {
+  background-color: #bebebe;
+  color: #797979;
+}
+
+.footer__copy {
+  background-color: #202020;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+.footer__copy p {
+  font-family: "Rubik", sans-serif;
+  color: #afafaf;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.footer__copy span {
+  font-weight: 700;
+}
+.footer__copy ul {
+  display: flex;
+  gap: 1rem;
+}
+.footer__copy a {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #afafaf;
+  font-weight: 700;
+}
+.footer__copy a:hover {
+  color: #ffffff;
+}
+.footer__copy span {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #797979;
+  font-weight: 700;
+}
+
+.homeMain__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  height: 50rem;
+  background-color: yellow;
+  background-image: url("../img/background_princial_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.homeMain__hero h1 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 8rem;
+  padding: 2rem 1rem 1rem 1rem;
+  text-align: right;
+}
+.homeMain__hero p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding: 1rem;
+  padding-top: 0;
+  width: 42rem;
+  line-height: 2rem;
+  text-align: right;
+  word-spacing: auto;
+}
+.homeMain__hero a {
+  font-family: "Rubik", sans-serif;
+  background-color: #202020;
+  font-weight: 400;
+  color: yellow;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.homeMain__hero a:hover {
+  background-color: yellow;
+  color: #202020;
+  text-decoration: none;
+}
+
+.separador {
+  height: 2rem;
+  background-color: #202020;
+}
+
+.homeMain__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "design 3dModeling" "coding photography" "moreWork moreWork";
+}
+.homeMain__content__section {
+  height: 30rem;
+}
+.homeMain__content__moreWork {
+  font-family: "Rubik", sans-serif;
+  background-color: #202020;
+  font-weight: 400;
+  color: yellow;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+  grid-area: moreWork;
+}
+.homeMain__content__moreWork:hover {
+  background-color: yellow;
+  color: #202020;
+  text-decoration: none;
+}
+
+.homeMain__content__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(var(--navegador--height) * 3);
+  padding: 10%;
+  background-color: yellow;
+  font-family: "Josefin Sans", sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sectionDesign {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  padding: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #19C6FF;
+  background-image: url("../img/test_design.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: design;
+}
+.sectionDesign h3 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.sectionDesign p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+}
+.sectionDesign a {
+  font-family: "Rubik", sans-serif;
+  background-color: #202020;
+  font-weight: 400;
+  color: #19C6FF;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.sectionDesign a:hover {
+  background-color: #19C6FF;
+  color: #202020;
+  text-decoration: none;
+}
+.section3d {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  padding: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #A068A9;
+  background-image: url("../img/test_3d.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: 3d;
+}
+.section3d h3 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.section3d p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+}
+.section3d a {
+  font-family: "Rubik", sans-serif;
+  background-color: #202020;
+  font-weight: 400;
+  color: #A068A9;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.section3d a:hover {
+  background-color: #A068A9;
+  color: #202020;
+  text-decoration: none;
+}
+.sectionCoding {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  padding: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #FFAC36;
+  background-image: url("../img/test_coding.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: coding;
+}
+.sectionCoding h3 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.sectionCoding p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+}
+.sectionCoding a {
+  font-family: "Rubik", sans-serif;
+  background-color: #202020;
+  font-weight: 400;
+  color: #FFAC36;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.sectionCoding a:hover {
+  background-color: #FFAC36;
+  color: #202020;
+  text-decoration: none;
+}
+.sectionPhotography {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  padding: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #FF1956;
+  background-image: url("../img/test_photography.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: photography;
+}
+.sectionPhotography h3 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.sectionPhotography p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  width: 70%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 1rem;
+}
+.sectionPhotography a {
+  font-family: "Rubik", sans-serif;
+  background-color: #202020;
+  font-weight: 400;
+  color: #FF1956;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.sectionPhotography a:hover {
+  background-color: #FF1956;
+  color: #202020;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
