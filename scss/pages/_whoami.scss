@@ -1,0 +1,54 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixing' as m;
+
+.WhoAmIMain {
+    &__hero {
+        @include m.paddingHeroes();
+        height: v.$generalHeroHeight;
+        background-color: v.$colorGeneralPrimary;
+        @include m.backgroundImgCenterCover(v.$homeHeroBackground);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    h1{
+        @extend %heroTitle;
+    }
+}
+
+.whoAmIContent{
+    background-color: v.$colorGeneralPrimary;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &__txt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10%;
+
+        h2{
+            @include m.titlesAndParagraphsStyles(h);
+            font-size: 2.8rem;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        p{
+            @include m.titlesAndParagraphsStyles(p);
+            font-size: 1.5rem;
+            line-height: 2rem;      
+            padding: 1rem;
+            margin-bottom: 1rem;
+            
+            &:last-child{
+                margin-bottom: 0rem;
+            }
+        }
+    }
+
+    &__img {
+        @include m.backgroundImgCenterCover('../img/test_who_am_i.jpg');
+    }
+}

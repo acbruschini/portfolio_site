@@ -40,6 +40,7 @@ $leftRightPadding: 10vw;
 $headerHeight: calc(($generalPadding)*2 + $headerLogoHeight);
 $QCHeight: calc($headerHeight*4);
 $generalGap: calc($generalPadding/2);
+$generalHeroHeight: calc($headerHeight*2);
 
 // HOME
 
@@ -50,3 +51,6 @@ $WhatIveDoneDesignBackground: "../img/test_design.jpg";
 $WhatIveDone3dBackground: "../img/test_3d.jpg";
 $WhatIveDoneCodingBackground: "../img/test_coding.jpg";
 $WhatIveDonePhotographyBackground: "../img/test_photography.jpg";
+
+// HOME
+

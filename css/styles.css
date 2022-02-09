@@ -175,20 +175,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-weight: 700;
 }
 
-.homeMain__hero {
-  padding: 2rem 10vw 2rem 10vw;
-  height: 50rem;
-  background-color: yellow;
-  background-image: url("../img/background_princial_1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-}
-.homeMain__hero h1 {
+.WhoAmIMain h1, .homeMain__hero h1 {
   background-color: black;
   color: #bebebe;
   font-family: "Josefin Sans", sans-serif;
@@ -196,6 +183,28 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-size: 8rem;
   padding: 2rem 1rem 1rem 1rem;
   text-align: right;
+}
+
+.separador {
+  height: 2rem;
+  background-color: #202020;
+}
+
+.homeMain__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  height: 50rem;
+  background-color: yellow;
+  background-image: url("../img/background_princial_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
 }
 .homeMain__hero p {
   background-color: black;
@@ -221,16 +230,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid transparent;
 }
 .homeMain__hero a:hover {
   background-color: yellow;
   color: #202020;
   text-decoration: none;
-}
-
-.separador {
-  height: 2rem;
-  background-color: #202020;
+  border: 1px solid #202020;
 }
 
 .homeMain__content {
@@ -253,6 +259,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 1.5rem;
   margin-top: 1.5rem;
   text-align: center;
+  border: 1px solid transparent;
   margin-top: 0;
   grid-area: moreWork;
 }
@@ -260,18 +267,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   background-color: yellow;
   color: #202020;
   text-decoration: none;
-}
-
-.homeMain__content__section {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: calc(var(--navegador--height) * 3);
-  padding: 10%;
-  background-color: yellow;
-  font-family: "Josefin Sans", sans-serif;
-  align-items: flex-start;
-  justify-content: center;
+  border: 1px solid #202020;
 }
 
 .sectionDesign {
@@ -284,6 +280,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   justify-content: center;
   background-color: #19C6FF;
   background-image: url("../img/test_design.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: design;
@@ -317,11 +314,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid transparent;
 }
 .sectionDesign a:hover {
   background-color: #19C6FF;
   color: #202020;
   text-decoration: none;
+  border: 1px solid #202020;
 }
 .section3d {
   display: flex;
@@ -333,6 +332,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   justify-content: center;
   background-color: #A068A9;
   background-image: url("../img/test_3d.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: 3d;
@@ -366,11 +366,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid transparent;
 }
 .section3d a:hover {
   background-color: #A068A9;
   color: #202020;
   text-decoration: none;
+  border: 1px solid #202020;
 }
 .sectionCoding {
   display: flex;
@@ -382,6 +384,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   justify-content: center;
   background-color: #FFAC36;
   background-image: url("../img/test_coding.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: coding;
@@ -415,11 +418,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid transparent;
 }
 .sectionCoding a:hover {
   background-color: #FFAC36;
   color: #202020;
   text-decoration: none;
+  border: 1px solid #202020;
 }
 .sectionPhotography {
   display: flex;
@@ -431,6 +436,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   justify-content: center;
   background-color: #FF1956;
   background-image: url("../img/test_photography.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-area: photography;
@@ -464,11 +470,65 @@ h1, h2, h3, h4, h5, h6, p, ul {
   padding: 1rem;
   margin-top: 1rem;
   text-align: center;
+  border: 1px solid transparent;
 }
 .sectionPhotography a:hover {
   background-color: #FF1956;
   color: #202020;
   text-decoration: none;
+  border: 1px solid #202020;
+}
+
+.WhoAmIMain__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  height: 20rem;
+  background-color: yellow;
+  background-image: url("../img/background_princial_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.whoAmIContent {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.whoAmIContent__txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+}
+.whoAmIContent__txt h2 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.whoAmIContent__txt p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.whoAmIContent__txt p:last-child {
+  margin-bottom: 0rem;
+}
+.whoAmIContent__img {
+  background-image: url("../img/test_who_am_i.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

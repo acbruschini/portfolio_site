@@ -1,11 +1,12 @@
-@use '../base/variables' as v;
-@use '../base/mixing' as m;
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixing' as m;
 
 .homeMain__hero{
-    padding: v.$generalPadding v.$leftRightPadding v.$generalPadding v.$leftRightPadding;
+    @include m.paddingHeroes();
     height: v.$homeHeroHeight;
     background-color: v.$colorGeneralPrimary;
-    background-image: url(v.$homeHeroBackground);
+    @include m.backgroundImgCenterCover(v.$homeHeroBackground);
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center right;
@@ -15,7 +16,7 @@
     align-items: flex-end;
 
     h1{
-        @include m.heroTitle();
+        @extend %heroTitle;
     }
 
     p {
@@ -36,7 +37,7 @@
 }
 
 .separador{
-    @include m.separador();
+    @extend %separador;
 }
 
 .homeMain__content{
@@ -59,18 +60,6 @@
         grid-area: moreWork;
     }
 
-}
-
-.homeMain__content__section{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: calc(var(--navegador--height)*3);
-    padding: 10%;
-    background-color: yellow;
-    font-family: 'Josefin Sans', sans-serif;
-    align-items: flex-start;
-    justify-content: center;
 }
 
 .section{

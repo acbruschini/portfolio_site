@@ -11,7 +11,7 @@
       }
 }
 
-@mixin heroTitle(){
+%heroTitle{
     @include titlesAndParagraphsStyles(h);
     font-size: 8rem;
     padding: 2rem 1rem 1rem 1rem;
@@ -29,18 +29,26 @@
     padding: $fontsize;
     margin-top: $fontsize;
     text-align: center;
+    border: 1px solid transparent;
 
     &:hover {
         background-color: $color; 
         color: v.$colorDark;
         text-decoration: none;
-        // border: 2px solid v.$colorDark;
+        border: 1px solid v.$colorDark;
     }
 }
 
-@mixin separador(){
+%separador{
     height: 2rem;
     background-color: v.$colorDark;
+}
+
+@mixin backgroundImgCenterCover($img){
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 @mixin homeWhatIveDoneCard($color, $img, $gridArea){
@@ -52,9 +60,7 @@
     align-items: flex-start;
     justify-content: center;
     background-color: $color;
-    background-image: url($img);
-    background-size: cover;
-    background-position: center;
+    @include backgroundImgCenterCover($img);
     grid-area: $gridArea;
 
     h3{
@@ -74,4 +80,8 @@
     a{
         @include button(1rem,$color);
     }
+}
+
+@mixin paddingHeroes($top: v.$generalPadding, $right: v.$leftRightPadding, $bottom: v.$generalPadding, $left: v.$leftRightPadding){
+    padding: $top $right $bottom $left;
 }
