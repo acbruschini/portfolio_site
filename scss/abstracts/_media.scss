@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+/* DESKTOP FIRST Porque un portfolio se ve gralmente en desktops */
+@media only screen and (max-width: 768px) {
+    /* tABLET? */
+    * {
+      font-size: 7px;
+    }
+    .homeContent__section{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .homeMain__content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "design"
+        "3dModeling"
+        "coding"
+        "photography"
+        "moreWork"
+        ;
+    }
+    
+    .whoAmIContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr;
+    }
+
+    
+    div[class^='WhatIveDone']{      
+        >h1 {
+            font-size: 5rem;
+        }
+    }
+
+    // div[class*='WhatIveDone'] div[class$='__hero']{      
+    //     h1 {
+    //         font-size: 5rem;
+    //     }
+    // }
+}

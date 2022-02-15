@@ -4,7 +4,7 @@
 .WhereIveWorked {
     &__hero {
         @include m.paddingHeroes();
-        height: v.$generalHeroHeight;
+        min-height: v.$generalHeroHeight;
         background-color: v.$colorGeneralPrimary;
         @include m.backgroundImgCenterCover(v.$homeHeroBackground);
         display:flex;

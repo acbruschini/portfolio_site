@@ -5,7 +5,6 @@
     &__hero {
         @include m.whatIveDoneHeroes(v.$colorSectionDesign, map-get(v.$WhatIveDoneHeroesBackground, design));
     }
-
 }
 
 .WhatIveDoneCoding {
@@ -28,3 +27,4 @@
     }
 
 }
+

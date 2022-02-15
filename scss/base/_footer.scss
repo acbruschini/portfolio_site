@@ -97,7 +97,7 @@
 
         ul{
             display:flex;
-            gap: 1rem;
+            // gap: 1rem;
         }
 
         a{
@@ -109,18 +109,20 @@
             font-weight: 700;
         }
 
-        a:hover{
-            color: v.$colorNavItemsHover;
-        }
-
-        span {
+        li>span {
             text-decoration: none;
             font-family: v.$fontSecondary;
             text-transform: uppercase;
             font-size: 1.5rem;
             color: v.$colorMiddle;
             font-weight: 700;
+            margin: 0 1rem 0 1rem;
         }
+
+        a:hover{
+            color: v.$colorNavItemsHover;
+        }
+
 
     }
 }
