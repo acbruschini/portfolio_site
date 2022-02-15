@@ -58,21 +58,24 @@
         @include m.button(1.5rem);
         margin-top: 0;
         grid-area: moreWork;
+        &:hover {
+            border: none;
+        }
     }
 
 }
 
 .section{
     &Design{
-        @include m.homeWhatIveDoneCard(v.$colorSectionDesign, v.$WhatIveDoneDesignBackground, design);
+        @include m.homeWhatIveDoneCard(v.$colorSectionDesign, map-get(v.$WhatIveDoneHeroesBackground, design), design);
     }
     &3d{
-        @include m.homeWhatIveDoneCard(v.$colorSection3d, v.$WhatIveDone3dBackground, 3d);
+        @include m.homeWhatIveDoneCard(v.$colorSection3d, map-get(v.$WhatIveDoneHeroesBackground, d3d), 3d);
     }
     &Coding{
-        @include m.homeWhatIveDoneCard(v.$colorSectionCoding, v.$WhatIveDoneCodingBackground, coding);
+        @include m.homeWhatIveDoneCard(v.$colorSectionCoding, map-get(v.$WhatIveDoneHeroesBackground, coding), coding);
     }
     &Photography{
-        @include m.homeWhatIveDoneCard(v.$colorSectionPhotography, v.$WhatIveDonePhotographyBackground, photography);
+        @include m.homeWhatIveDoneCard(v.$colorSectionPhotography, map-get(v.$WhatIveDoneHeroesBackground, photography), photography);
     }
 }

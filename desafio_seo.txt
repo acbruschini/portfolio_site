@@ -1,0 +1,7 @@
+Para este desafio realice:
+1) Mixins para un monton de cosas.
+2) Extends para separador que uso entre secciones de la pagina, y para los titulos de los heroes.
+3) Maps, para el background de los heroes de What ive done.
+4) Agregue keywords y descripciones a cada una de las paginas del nav.
+
+5) Tambien agregue los Alts que me faltaban (que no eran muchos)

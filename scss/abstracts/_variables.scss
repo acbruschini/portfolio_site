@@ -47,10 +47,18 @@ $generalHeroHeight: calc($headerHeight*2);
 $homeHeroHeight: calc($headerHeight*5);
 $homeWhatIveDoneCardHeight: calc($headerHeight*3);
 $homeHeroBackground: "../img/background_princial_1.jpg";
-$WhatIveDoneDesignBackground: "../img/test_design.jpg";
-$WhatIveDone3dBackground: "../img/test_3d.jpg";
-$WhatIveDoneCodingBackground: "../img/test_coding.jpg";
-$WhatIveDonePhotographyBackground: "../img/test_photography.jpg";
+
+$WhatIveDoneHeroesBackground: (
+"design": "../img/test_design.jpg",
+"d3d": "../img/test_3d.jpg",
+"coding": "../img/test_coding.jpg",
+"photography": "../img/test_photography.jpg",
+);
+
+// $WhatIveDoneDesignBackground: "../img/test_design.jpg";
+// $WhatIveDone3dBackground: "../img/test_3d.jpg";
+// $WhatIveDoneCodingBackground: "../img/test_coding.jpg";
+// $WhatIveDonePhotographyBackground: "../img/test_photography.jpg";
 
 // HOME
 

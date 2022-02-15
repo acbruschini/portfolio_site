@@ -3,28 +3,28 @@
 
 .WhatIveDoneDesign {
     &__hero {
-        @include m.whatIveDoneHeroes(v.$colorSectionDesign, v.$WhatIveDoneDesignBackground);
+        @include m.whatIveDoneHeroes(v.$colorSectionDesign, map-get(v.$WhatIveDoneHeroesBackground, design));
     }
 
 }
 
 .WhatIveDoneCoding {
     &__hero {
-        @include m.whatIveDoneHeroes(v.$colorSectionCoding, v.$WhatIveDoneCodingBackground);
+        @include m.whatIveDoneHeroes(v.$colorSectionCoding, map-get(v.$WhatIveDoneHeroesBackground, coding));
     }
 
 }
 
 .WhatIveDone3dModeling {
     &__hero {
-        @include m.whatIveDoneHeroes(v.$colorSection3d, v.$WhatIveDone3dBackground);
+        @include m.whatIveDoneHeroes(v.$colorSection3d, map-get(v.$WhatIveDoneHeroesBackground, d3d));
     }
 
 }
 
 .WhatIveDonePhotography {
     &__hero {
-        @include m.whatIveDoneHeroes(v.$colorSectionPhotography, v.$WhatIveDonePhotographyBackground);
+        @include m.whatIveDoneHeroes(v.$colorSectionPhotography, map-get(v.$WhatIveDoneHeroesBackground, photography));
     }
 
 }
