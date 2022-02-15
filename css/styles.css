@@ -175,7 +175,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
   font-weight: 700;
 }
 
-.WhoAmIMain h1, .homeMain__hero h1 {
+.WhatIveDoneDesign__hero h1, .WhatIveDoneCoding__hero h1, .WhatIveDone3dModeling__hero h1, .WhatIveDonePhotography__hero h1, .WhereIveWorked h1, .WhoAmIMain h1, .homeMain__hero h1 {
   background-color: black;
   color: #bebebe;
   font-family: "Josefin Sans", sans-serif;
@@ -481,7 +481,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .WhoAmIMain__hero {
   padding: 2rem 10vw 2rem 10vw;
-  height: 20rem;
+  min-height: 20rem;
   background-color: yellow;
   background-image: url("../img/background_princial_1.jpg");
   background-repeat: no-repeat;
@@ -529,6 +529,111 @@ h1, h2, h3, h4, h5, h6, p, ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.WhereIveWorked__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  height: 20rem;
+  background-color: yellow;
+  background-image: url("../img/background_princial_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.WhatIveDoneDesign__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  min-height: 20rem;
+  background-color: #19C6FF;
+  background-image: url("../img/test_design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.WhatIveDoneDesign__hero p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  text-align: right;
+}
+
+.WhatIveDoneCoding__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  min-height: 20rem;
+  background-color: #FFAC36;
+  background-image: url("../img/test_coding.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.WhatIveDoneCoding__hero p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  text-align: right;
+}
+
+.WhatIveDone3dModeling__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  min-height: 20rem;
+  background-color: #A068A9;
+  background-image: url("../img/test_3d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.WhatIveDone3dModeling__hero p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  text-align: right;
+}
+
+.WhatIveDonePhotography__hero {
+  padding: 2rem 10vw 2rem 10vw;
+  min-height: 20rem;
+  background-color: #FF1956;
+  background-image: url("../img/test_photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.WhatIveDonePhotography__hero p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 1rem 1rem 0 1rem;
+  text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

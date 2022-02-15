@@ -85,3 +85,24 @@
 @mixin paddingHeroes($top: v.$generalPadding, $right: v.$leftRightPadding, $bottom: v.$generalPadding, $left: v.$leftRightPadding){
     padding: $top $right $bottom $left;
 }
+
+@mixin whatIveDoneHeroes($colorSection, $bg){
+    @include paddingHeroes();
+    min-height: v.$generalHeroHeight;
+    background-color: $colorSection;
+    @include backgroundImgCenterCover($bg);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    h1{
+        @extend %heroTitle;
+    }
+    
+    p{
+        @include titlesAndParagraphsStyles(p); 
+        font-size: 2rem;
+        padding: 1rem 1rem 0 1rem;
+        text-align: right;  
+    }
+}

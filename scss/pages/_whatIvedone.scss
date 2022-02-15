@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixing' as m;
+
+.WhatIveDoneDesign {
+    &__hero {
+        @include m.whatIveDoneHeroes(v.$colorSectionDesign, v.$WhatIveDoneDesignBackground);
+    }
+
+}
+
+.WhatIveDoneCoding {
+    &__hero {
+        @include m.whatIveDoneHeroes(v.$colorSectionCoding, v.$WhatIveDoneCodingBackground);
+    }
+
+}
+
+.WhatIveDone3dModeling {
+    &__hero {
+        @include m.whatIveDoneHeroes(v.$colorSection3d, v.$WhatIveDone3dBackground);
+    }
+
+}
+
+.WhatIveDonePhotography {
+    &__hero {
+        @include m.whatIveDoneHeroes(v.$colorSectionPhotography, v.$WhatIveDonePhotographyBackground);
+    }
+
+}
