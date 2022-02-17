@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 }
 .WhereIveWorkedContent__education {
   grid-area: education;
-  background-image: url("../../img/pattern_2.gif");
+  background-image: url("../img/pattern_2.gif");
   display: flex;
   flex-direction: column;
   align-items: flex-start;
