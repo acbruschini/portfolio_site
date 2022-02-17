@@ -2,7 +2,6 @@
 
 /* DESKTOP FIRST Porque un portfolio se ve gralmente en desktops */
 @media only screen and (max-width: 768px) {
-    /* tABLET? */
     * {
       font-size: 7px;
     }
@@ -37,9 +36,12 @@
         }
     }
 
-    // div[class*='WhatIveDone'] div[class$='__hero']{      
-    //     h1 {
-    //         font-size: 5rem;
-    //     }
-    // }
+    .WhereIveWorkedContent{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "experience"
+        "education"
+        "companies"
+        ;
+    }
 }

@@ -534,6 +534,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
   background-position: center;
 }
 
+.roundIcons {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 .WhereIveWorked__hero {
   padding: 2rem 10vw 2rem 10vw;
   min-height: 20rem;
@@ -547,6 +554,125 @@ h1, h2, h3, h4, h5, h6, p, ul {
   justify-content: center;
   align-items: flex-end;
 }
+.WhereIveWorkedContent {
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "experience education" "companies companies";
+}
+.WhereIveWorkedContent__education {
+  grid-area: education;
+  background-image: url("../../img/pattern_2.gif");
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+}
+.WhereIveWorkedContent__education > h2 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.WhereIveWorkedContent__education > p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+.WhereIveWorkedContent__education__card {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 100%;
+  padding: min(5%, 16.6666666667px);
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-areas: "icono h3" "icono h4" "icono p";
+  grid-column-gap: min(5%, 16.6666666667px);
+  grid-row-gap: min(0.3rem, 16.6666666667px);
+  margin-bottom: 1.5rem;
+}
+.WhereIveWorkedContent__education__card__icon {
+  grid-area: icono;
+}
+.WhereIveWorkedContent__education__card__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.WhereIveWorkedContent__education__card__years {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.WhereIveWorkedContent__education__card__resume {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+}
+.WhereIveWorkedContent__experience {
+  grid-area: experience;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+}
+.WhereIveWorkedContent__experience > h2 {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  padding: 1rem 1rem 0 1rem;
+}
+.WhereIveWorkedContent__experience > p {
+  background-color: black;
+  color: #bebebe;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 1rem;
+  margin-bottom: 2.5rem;
+}
+.WhereIveWorkedContent__experience__card {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 100%;
+  padding: min(5%, 16.6666666667px);
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-areas: "icono h3" "icono h4" "icono p";
+  grid-column-gap: min(5%, 16.6666666667px);
+  grid-row-gap: min(0.3rem, 16.6666666667px);
+  margin-bottom: 1.5rem;
+}
+.WhereIveWorkedContent__experience__card__icon {
+  grid-area: icono;
+}
+.WhereIveWorkedContent__experience__card__name {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.WhereIveWorkedContent__experience__card__years {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.WhereIveWorkedContent__experience__card__resume {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+}
+.WhereIveWorkedContent__companies {
+  grid-area: companies;
+  background-color: green;
+}
+
 .WhatIveDoneDesign__hero {
   padding: 2rem 10vw 2rem 10vw;
   background-image: url("../img/test_design.jpg");
@@ -645,7 +771,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 /* DESKTOP FIRST Porque un portfolio se ve gralmente en desktops */
 @media only screen and (max-width: 768px) {
-  /* tABLET? */
   * {
     font-size: 7px;
   }
@@ -668,6 +793,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
   div[class^=WhatIveDone] > h1 {
     font-size: 5rem;
+  }
+
+  .WhereIveWorkedContent {
+    grid-template-columns: 1fr;
+    grid-template-areas: "experience" "education" "companies";
   }
 }
 

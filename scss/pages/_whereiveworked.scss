@@ -1,6 +1,10 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixing' as m;
 
+.roundIcons{
+    @include m.roundIcons(v.$roundIconsSize);
+}
+
 .WhereIveWorked {
     &__hero {
         @include m.paddingHeroes();
@@ -15,5 +19,77 @@
 
     h1{
         @extend %heroTitle;
+    }
+}
+
+.WhereIveWorkedContent{
+    background-color: v.$colorGeneralPrimary;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "experience education"
+    "companies companies"
+    ;
+
+    &__education{
+        grid-area: education;
+        background-image: url("../../img/pattern_2.gif");
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10%;
+
+        >h2{
+            @include m.titlesAndParagraphsStyles(h);
+            font-size: 2.8rem;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        >p{
+            @include m.titlesAndParagraphsStyles(p);
+            font-size: 1.5rem;
+            line-height: 2rem;      
+            padding: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        &__card{
+            @include m.whatIveDoneCards(v.$colorGeneralPrimary);
+
+        }
+    }
+
+    &__experience{
+        grid-area: experience;
+        // background-color: v.$colorGeneralPrimary;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10%;
+        // border-left: solid 1px black;
+
+        >h2{
+            @include m.titlesAndParagraphsStyles(h);
+            font-size: 2.8rem;
+            padding: 1rem 1rem 0 1rem;
+        }
+
+        >p{
+            @include m.titlesAndParagraphsStyles(p);
+            font-size: 1.5rem;
+            line-height: 2rem;      
+            padding: 1rem;
+            margin-bottom: 2.5rem;
+
+        }
+
+        &__card{
+            @include m.whatIveDoneCards();
+        }
+    }
+
+    &__companies{
+        grid-area: companies;
+        background-color: green;
     }
 }
