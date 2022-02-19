@@ -42,13 +42,14 @@ $headerHeight: calc(($generalPadding)*2 + $headerLogoHeight);
 $QCHeight: calc($headerHeight*4);
 $generalGap: calc($generalPadding/2);
 $generalHeroHeight: calc($headerHeight*2);
+$WhatIveDone__prjCard_padding: 3rem;
 
 // HOME
 
 $homeHeroHeight: calc($headerHeight*5);
 $homeWhatIveDoneCardHeight: calc($headerHeight*3);
-$homeHeroBackground: "../img/background_princial_1.jpg";
 
+$homeHeroBackground: "../img/background_princial_1.jpg";
 $WhatIveDoneHeroesBackground: (
 "design": "../img/test_design.jpg",
 "d3d": "../img/test_3d.jpg",
@@ -56,7 +57,16 @@ $WhatIveDoneHeroesBackground: (
 "photography": "../img/test_photography.jpg",
 );
 
+$patternBackground: "../img/pattern_2.gif";
+
 $roundIconsSize: 50px;
 
-// HOME
+// PROJECTS
+
+$WhatIveDoneDesign_prj_1: (
+"p01": "../img/projects/qualityartworks_1_01.jpg",
+"p02": "../img/projects/qualityartworks_1_01.jpg",
+"p03": "../img/projects/qualityartworks_1_01.jpg",
+"p04": "../img/projects/qualityartworks_1_01.jpg",
+);
 

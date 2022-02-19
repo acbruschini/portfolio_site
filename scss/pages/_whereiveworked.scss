@@ -26,15 +26,14 @@
     background-color: v.$colorGeneralPrimary;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     grid-template-areas:
     "experience education"
-    "companies companies"
     ;
 
     &__education{
         grid-area: education;
-        background-image: url("../../img/pattern_2.gif");
+        background-image: url(v.$patternBackground);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -54,7 +53,7 @@
             margin-bottom: 2.5rem;
         }
         &__card{
-            @include m.whatIveDoneCards(v.$colorGeneralPrimary);
+            @include m.whereIveWorkedCards(v.$colorGeneralPrimary);
 
         }
     }
@@ -84,12 +83,7 @@
         }
 
         &__card{
-            @include m.whatIveDoneCards();
+            @include m.whereIveWorkedCards();
         }
-    }
-
-    &__companies{
-        grid-area: companies;
-        background-color: green;
     }
 }
