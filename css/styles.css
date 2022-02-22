@@ -1263,6 +1263,18 @@ h1, h2, h3, h4, h5, h6, p, ul {
   .WhatIveDoneDesignContent {
     grid-template-columns: 1fr;
   }
+
+  .WhatIveDoneCodingContent {
+    grid-template-columns: 1fr;
+  }
+
+  .WhatIveDone3dModelingContent {
+    grid-template-columns: 1fr;
+  }
+
+  .WhatIveDonePhotographyContent {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
