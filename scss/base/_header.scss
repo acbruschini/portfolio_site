@@ -16,6 +16,9 @@
     &:hover{
         color: v.$colorNavItemsHover;
     }
+    &:focus{
+        color: v.$colorNavItems;
+    }
 }
 
 .navbar-toggler {

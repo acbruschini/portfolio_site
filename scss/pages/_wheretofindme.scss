@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixing' as m;
+
+.WhereToFindMe {
+    &__hero {
+        @include m.paddingHeroes();
+        min-height: v.$generalHeroHeight;
+        background-color: v.$colorGeneralPrimary;
+        @include m.backgroundImgCenterCover(v.$homeHeroBackground);
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    h1{
+        @extend %heroTitle;
+    }
+
+    &__content{
+        width: 100%;
+        height: calc(v.$headerHeight*4);
+        filter: grayscale(100%) ;
+        
+    }
+}

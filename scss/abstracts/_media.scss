@@ -41,7 +41,15 @@
         grid-template-areas:
         "experience"
         "education"
-        "companies"
         ;
     }
+
+    .WhatIveDoneDesignContent{
+        grid-template-columns: 1fr;
+    }
+
+    // .modal-dialog{
+    //     width: 100vw;
+    //     max-width: 1000px;
+    // }
 }

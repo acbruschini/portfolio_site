@@ -120,7 +120,7 @@
     }
 }
 
-@mixin whatIveDoneCards($bgcolor: transparent) {
+@mixin whereIveWorkedCards($bgcolor: transparent) {
     background-color: $bgcolor;
     border: 1px solid black;
     width: 100%;
@@ -155,6 +155,96 @@
         font-family: v.$fontContent;
         font-size: 1.3rem;
     }
+}
+
+@mixin whereIveWorkedContent($section)
+{
+    
+    $color: red;
+
+    @if $section == design {
+        $color: v.$colorSectionDesign;        
+    } @else if $section == coding {
+        $color: v.$colorSectionCoding;
+    } @else if $section == photography {
+        $color: v.$colorSectionPhotography;
+    } @else if $section == 3d {
+        $color: v.$colorSection3d;
+    }
+
+    
+    display: grid;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
+        background-color: $color;
+        background-image: url(v.$patternBackground);
+
+        &__prjCard{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas:
+            "type info";
+            min-height: calc(v.$headerHeight*4);
+            
+
+            &__type{
+                grid-area: type;
+                width: 0rem;
+                // background-color: $color;
+                // background-image: url(v.$patternBackground);
+            }
+
+            &__modal{
+                grid-area: type;
+            }
+
+            &__info{
+                position: relative;
+                grid-area: info;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-end;
+                padding: v.$WhatIveDone__prjCard_padding;
+                overflow: hidden;  
+
+                &__name{
+                    @include titlesAndParagraphsStyles(h);
+                    font-size: 2.5rem;
+                    padding: 1rem 1rem 0 1rem;
+                    color: $color;
+                    z-index: 2;
+                }
+
+                &__brief{
+                    @include titlesAndParagraphsStyles(p);
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    padding: 1rem;
+                    z-index: 2;
+                }
+
+                &__link{
+                    @include button($color: $color);
+                    z-index: 2;
+                }
+
+                &__img{
+                    position:absolute;
+                    width: 100%;
+                    height: 100%;
+                    //transform: translate(calc(v.$WhatIveDone__prjCard_padding*-1),calc(v.$WhatIveDone__prjCard_padding*-1));
+                    transform: translate(calc(v.$WhatIveDone__prjCard_padding*-1),calc(v.$WhatIveDone__prjCard_padding));
+                    // filter: invert(57%) sepia(92%) saturate(1461%) hue-rotate(164deg) brightness(103%) contrast(103%);
+                    // filter: invert(10%) sepia(92%) saturate(1461%) hue-rotate(164deg) brightness(80%) contrast(103%) blur(0px);
+                    // filter: grayscale(100%) brightness(100%) contrast(30%);
+                    // filter: brightness(100%) contrast(50%);
+                    z-index: 1;
+                    object-fit: cover;
+
+                }
+            }
+        }
 }
 
 @mixin roundIcons($size) {
